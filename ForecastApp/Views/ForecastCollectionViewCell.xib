@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ForecastCollectionViewCell" id="s6h-Fb-RS4" customClass="ForecastCollectionViewCell" customModule="ForecastApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="K8Z-I5-UwL">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osG-eK-Rm6">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFp-tN-PJm">
+                        <rect key="frame" x="0.0" y="27" width="72" height="20.5"/>
+                        <color key="backgroundColor" red="0.044784433169999999" green="0.084609137639999998" blue="0.08381696491" alpha="0.24113181410000001" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-LL-DgX">
+                        <rect key="frame" x="0.0" y="51" width="72" height="21"/>
+                        <color key="backgroundColor" red="0.044784433169999999" green="0.084609137639999998" blue="0.08381696491" alpha="0.24113181410000001" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zFp-tN-PJm" firstAttribute="leading" secondItem="K8Z-I5-UwL" secondAttribute="leading" id="HEc-9u-WZ4"/>
+                    <constraint firstItem="zFp-tN-PJm" firstAttribute="firstBaseline" secondItem="osG-eK-Rm6" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="LNG-dH-2dL"/>
+                    <constraint firstItem="hRy-LL-DgX" firstAttribute="leading" secondItem="K8Z-I5-UwL" secondAttribute="leading" id="Odn-Ba-6ff"/>
+                    <constraint firstItem="osG-eK-Rm6" firstAttribute="top" secondItem="K8Z-I5-UwL" secondAttribute="top" id="QEq-66-jUa"/>
+                    <constraint firstAttribute="trailing" secondItem="osG-eK-Rm6" secondAttribute="trailing" id="cvH-MJ-mfE"/>
+                    <constraint firstItem="hRy-LL-DgX" firstAttribute="firstBaseline" secondItem="zFp-tN-PJm" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="qvs-1C-6GM"/>
+                    <constraint firstItem="osG-eK-Rm6" firstAttribute="leading" secondItem="K8Z-I5-UwL" secondAttribute="leading" id="v77-ql-veL"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="200" height="150"/>
+            <connections>
+                <outlet property="dateLable" destination="osG-eK-Rm6" id="78n-8z-y4K"/>
+                <outlet property="mintempLab" destination="zFp-tN-PJm" id="hYZ-LK-DVu"/>
+                <outlet property="temperature" destination="hRy-LL-DgX" id="8UG-te-MNv"/>
+            </connections>
+            <point key="canvasLocation" x="253.62318840579712" y="198.21428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
