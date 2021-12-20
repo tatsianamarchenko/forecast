@@ -116,5 +116,4 @@ func currentWeatherWithCity(geo: String, complition: @escaping (Result<WeatherRe
                 }
             }.resume()
         }
-    
 }
